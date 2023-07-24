@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto+Slab:wght@700&display=swap');
+
+body {
+  background-color: #d6eadf;
+  font-family: 'Noto Sans', sans-serif;
+  color:#051923;
+  font-size:25px;
+  line-height:30px;
+  background-image: url(images/background.jpg);
+  background-size: 2000px;
+}
+
+h1, h2 {
+  font-family: 'Roboto Slab', serif;
+  color:#212f45;
+  font-size:35px;
+  line-height:35px;
+}
+
+a {
+  color: #125e8a;
+  text-decoration: none;
+}
+
+#profile {
+  height: 200px;
+	width: 200px;
+	object-fit: cover;
+}
+
+.container {
+  width: 700px;
+  margin: 0 auto;
+}
+
+.card {
+background-color: rgba(255, 255, 255, 0.8);
+border: 1px solid #ffffff;
+border-radius: 5px;
+text-align: center;
+margin: 5px;
+padding-bottom: 15px;
+}
+
+.card img {
+  border-radius: 75%;
+}
+
+.list-inline {
+  list-style: none;
+  padding: 0 30px;
+}
+
+.list-inline > li {
+  display: inline-block;
+  margin: 15px;
+  margin-top: 0;
+}
+
+i {
+  font-size: 35px;
+}
+
+i:hover {
+  opacity: 0.5;
+}
+
+#finland {
+  border-radius: 10%;
+  float: left;
+}
+
+#travel {
+  border-radius: 10%;
+  float: left;
+}
+
+#yoga {
+  border-radius: 10%;
+  float: left;
+}
+
+.btn-blue {
+  background-color: #125e8a;
+  color: #f2f4f3;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+
+.btn-blue:hover {
+  opacity: 0.5;
+}
+
+.card-content {
+  display: grid;
+  padding: 15px;
+  margin: 0, 0, 5px, 0;
+  grid-template-columns: 40% 1fr;
+  gap: 15px;
+}
+
+.card-content.flip {
+  grid-template-columns: 1fr 40%;
+}
+
+img {
+  width: 90%;
+  height: 80%;
+}
+
+.sns {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+    font-size: 0.7em;
+  }
+}
+
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+    font-size: 0.5em;
+  }
+  .img {
+    width: 100%;
+  }
+  .card-content {
+    grid-template-columns: none none;
+  }
+}
